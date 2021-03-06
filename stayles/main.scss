@@ -1,0 +1,299 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6fd;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  min-width: 1350px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  background-color: #fff;
+  .header-top{
+    border-bottom: 1px solid #e6e8ee;
+
+    &__search{
+      form{
+        input{
+          border-radius: 10px;
+        }
+        button{
+          border-radius: 10px;
+        }
+      }
+    }
+    .dropdown{
+
+      button{
+        border-radius: 10px;
+      }
+      ul{
+        min-width: 105px;
+        a{
+          color: #000000;
+        }
+      }
+    }
+    .dropdown-cart{
+     
+      button{
+        border-radius: 10px;
+      }
+      .cart-count{
+        position: relative;
+        top: -8px;
+        left: 0;
+        font-size: 11px;
+        background-color: #008dff;
+        border-radius: 50%;
+        height: 16px;
+        color: #ffffff;
+        width: 16px;
+        text-align: center;
+        display: inline-block;
+      }
+    }
+    .asaxiy-number{
+      color: #000000;
+      opacity: 0.5;
+      position: relative;
+      &:hover{
+        opacity: 1;
+      }
+      &::before{
+        content: "";
+        background-image: url('../images/icons/mobile-alt-solid.svg');
+        position: absolute;
+        background-size:10px 20px;
+        width: 10px;
+        height: 20px;
+        top: 2px;
+        left: -14px;
+        margin: auto;
+      }
+    }
+    .cart-modal{
+      
+      .cart-wrapper{
+        display: none;
+        .cart-spans{
+
+        }
+        .cart-buttons{
+
+        }
+      }
+    }
+  }
+  .header-bottom{
+
+    .nav-links{
+      position: relative;
+      padding-left: 30px;
+      
+      a{
+        padding: 0;
+        color: rgba(20, 24, 33, 0.7);
+      }
+      .burger{
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 20px;
+
+        &__inner{
+          display: block;
+          width: 20px;
+          height: 2px;
+          margin-top: 4.5px;
+          border-radius: 10px;
+          background-color: #008dff;
+        }
+      }
+    }
+  }
+}
+
+.wrapper{
+  .wrapper-left{
+    position: relative;
+    img{
+      border-radius: 20px;
+    }
+    a{
+      position: absolute;
+      top: 60px;
+      left: 75px;
+    }
+  }
+  .wrapper-right{
+    .inner{
+      position: relative;
+      background-color: #fff;
+      height: 165px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      
+      .spans{
+        span{
+          width: 10px;
+          height: 10px;
+          background-color: #e8e8e8;
+          border-radius: 50%;
+          display: inline-block;
+        }
+      }
+      img{
+        position: absolute;
+        width: 90px;
+        left: 20px;
+        top: 10px;
+      }
+      .img2{
+        right: 0;
+        left: auto;
+      }
+      a{
+        strong{
+          font-size: 13px;
+          color: #000000;
+        
+        }
+      }
+    }
+  }
+}
+
+.aside{
+  .aside-top{
+    border-radius: 20px;
+  }
+  .aside-center{
+    background-color: #fff;
+    border-radius: 20px;
+    .card-body{
+      h5{
+        height: 60px;
+        .stiv{
+          font-size: 16px;
+          line-height: 20px;
+          color: #141821;
+        }
+      }
+      .buyurtma{
+        .karzinka{
+          svg{
+            transform: scale(1.5);
+            transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+            fill: #c2c6d1;
+          }
+        }
+      }
+      .item-links{
+        .item-link{
+          color: #c2c6d1;
+        }
+      }
+    }
+  }
+  .bazar{
+    border-radius: 20px;
+    background-color: #fff;
+    .products{
+      .product{
+        .item-info{
+          .h5{
+            font-size: 15px;
+            color: #141821;
+          }
+          .karzinka{
+            svg{
+              transform: scale(1.5);
+              transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+              fill: #c2c6d1;
+            }
+          }
+          .item-link{
+            color: #c2c6d1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.footer-card {
+  display: flex;
+  align-items: center;
+  .title{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 4px;
+  }
+}
+
+
+.benefit-subtitle {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #858997;
+  width: 180px;
+}
+
+.footer-card-img {
+  margin-right: 20px;
+}
+
+.card{
+  .card-img-top{
+    width: 142px; 
+    height: 142px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .card-body{
+    .card-title{
+      color: #181421;
+    }
+  }
+}
+
+.bazar1{
+  .products{
+    .product{
+      background-color: #fff;
+      border-radius: 20px;
+      .item-info{
+        .h5{
+          font-size: 15px;
+          color: #141821;
+        }
+        .karzinka{
+          svg{
+            transform: scale(1.5);
+            transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) all 0.5s;
+            fill: #c2c6d1;
+          }
+        }
+        .item-link{
+          color: #c2c6d1;
+        }
+      }
+    }
+  }
+}
